@@ -5,9 +5,9 @@ set foldmethod=indent
 set foldnestmax=3
 set nofoldenable
 set backspace=indent,eol,start
+set smartindent
 set autoindent
 set copyindent
-set smartindent
 set shiftwidth=2
 set softtabstop=2
 set expandtab
@@ -30,4 +30,7 @@ set noswapfile
 set nobackup
 set nowb
 inoremap jk <ESC>
+let g:netrw_liststyle=3
+map <silent> <C-n> :NERDTreeToggle<CR>
 exec pathogen#infect()
+call pathogen#helptags()
